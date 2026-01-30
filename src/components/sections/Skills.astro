@@ -1,0 +1,107 @@
+---
+import { SKILLS } from '../../utils/constants';
+import Card from '../ui/Card.astro';
+import { Icon } from 'astro-icon/components';
+---
+
+<section id="skills" class="py-20 px-4">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl sm:text-5xl font-bold mb-4">
+        <span class="gradient-text">Skills</span> & Tecnologías
+      </h2>
+      <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+        Tecnologías y herramientas con las que trabajo para crear experiencias excepcionales
+      </p>
+    </div>
+
+    <!-- Frontend Skills -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-bold mb-6 text-gray-200">Frontend</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          SKILLS.frontend.map((skill) => (
+            <Card hoverable>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center">
+                  <Icon name={skill.icon} class="w-12 h-12" />
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-white">{skill.name}</h4>
+                  <p class="text-sm text-gray-400">{skill.level}</p>
+                </div>
+              </div>
+            </Card>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- Backend Skills -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-bold mb-6 text-gray-200">Backend</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          SKILLS.backend.map((skill) => (
+            <Card hoverable>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center">
+                  <Icon name={skill.icon} class="w-12 h-12" />
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-white">{skill.name}</h4>
+                  <p class="text-sm text-gray-400">{skill.level}</p>
+                </div>
+              </div>
+            </Card>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-bold mb-6 text-gray-200">Herramientas</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          SKILLS.tools.map((skill) => (
+            <Card hoverable>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center">
+                  <Icon name={skill.icon} class="w-12 h-12" />
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-white">{skill.name}</h4>
+                  <p class="text-sm text-gray-400">{skill.level}</p>
+                </div>
+              </div>
+            </Card>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- AI Collaborators -->
+    <div>
+      <h3 class="text-2xl font-bold mb-6 text-gray-200">Colaboradores de Desarrollo IA</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          SKILLS.aiCollaborators.map((skill) => (
+            <Card hoverable>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 flex items-center justify-center">
+                  <Icon name={skill.icon} class="w-12 h-12" />
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-white">{skill.name}</h4>
+                  <p class="text-sm text-purple-400">{skill.level}</p>
+                </div>
+              </div>
+            </Card>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

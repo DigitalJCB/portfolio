@@ -1,0 +1,107 @@
+---
+import { NAV_LINKS, SITE_INFO } from '../../utils/constants';
+import { Icon } from 'astro-icon/components';
+---
+
+<nav
+  x-data="{ scrolled: false, mobileMenuOpen: false }"
+  @scroll.window="scrolled = window.scrollY > 50"
+  :class="scrolled ? 'bg-primary-bg/80 backdrop-blur-lg shadow-lg' : 'bg-transparent'"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo / Name -->
+      <a href="#hero" class="text-xl font-bold gradient-text hover:opacity-80 transition-opacity">
+        {SITE_INFO.name}
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center gap-8">
+        {
+          NAV_LINKS.map((link) => (
+            <a
+              href={link.href}
+              class="text-gray-300 hover:text-white transition-colors duration-200 relative group"
+            >
+              {link.label}
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 transition-all duration-300 group-hover:w-full" />
+            </a>
+          ))
+        }
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        @click="mobileMenuOpen = !mobileMenuOpen"
+        class="md:hidden text-white focus:outline-none"
+        aria-label="Toggle menu"
+      >
+        <svg
+          x-show="!mobileMenuOpen"
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg
+          x-show="mobileMenuOpen"
+          x-cloak
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      x-show="mobileMenuOpen"
+      x-transition:enter="transition ease-out duration-200"
+      x-transition:enter-start="opacity-0 transform scale-95"
+      x-transition:enter-end="opacity-100 transform scale-100"
+      x-transition:leave="transition ease-in duration-150"
+      x-transition:leave-start="opacity-100 transform scale-100"
+      x-transition:leave-end="opacity-0 transform scale-95"
+      x-cloak
+      class="md:hidden pb-4"
+    >
+      <div class="flex flex-col gap-4 pt-4">
+        {
+          NAV_LINKS.map((link) => (
+            <a
+              href={link.href}
+              @click="mobileMenuOpen = false"
+              class="text-gray-300 hover:text-white transition-colors duration-200 px-2"
+            >
+              {link.label}
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</nav>
+
+<style>
+  [x-cloak] {
+    display: none !important;
+  }
+
+  .bg-primary-bg {
+    background-color: var(--color-primary-bg);
+  }
+</style>

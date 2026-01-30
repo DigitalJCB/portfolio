@@ -1,0 +1,70 @@
+---
+import { SITE_INFO } from '../../utils/constants';
+import Button from '../ui/Button.astro';
+---
+
+<section id="hero" class="min-h-screen flex items-center justify-center px-4 pt-16">
+  <div class="max-w-5xl mx-auto text-center">
+    <!-- Main Heading -->
+    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
+      Hola, soy <span class="gradient-text">{SITE_INFO.name}</span>
+    </h1>
+
+    <!-- Role/Title -->
+    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-gray-300 animate-fade-in" style="animation-delay: 0.1s;">
+      {SITE_INFO.role}
+    </h2>
+
+    <!-- Tagline -->
+    <p class="text-xl sm:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto animate-fade-in" style="animation-delay: 0.2s;">
+      {SITE_INFO.tagline}
+    </p>
+
+    <!-- CTAs -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style="animation-delay: 0.3s;">
+      <Button href="#projects" variant="primary">
+        Ver Proyectos
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </Button>
+      <Button href="#contact" variant="secondary">
+        Contactar
+      </Button>
+    </div>
+
+    <!-- Availability Badge -->
+    {
+      SITE_INFO.availableForWork && (
+        <div class="mt-12 animate-fade-in" style="animation-delay: 0.4s;">
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 text-green-400 rounded-full border border-green-500/20">
+            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+            Disponible para nuevos proyectos
+          </span>
+        </div>
+      )
+    }
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+</style>
