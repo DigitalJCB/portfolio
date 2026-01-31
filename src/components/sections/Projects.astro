@@ -26,7 +26,7 @@ import { Icon } from 'astro-icon/components';
             }`}
           >
             {/* Project Image Background */}
-            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-blue-900/20 group-hover:from-purple-900/30 group-hover:to-blue-900/30 transition-all duration-300">
+            <div class="absolute inset-0 bg-gradient-to-br from-[#471396]/30 to-[#7c3aed]/20 group-hover:from-[#471396]/40 group-hover:to-[#7c3aed]/30 transition-all duration-300">
               {/* Placeholder gradient - replace with actual images */}
               <div class="w-full h-full flex items-center justify-center">
                 <Icon
@@ -56,7 +56,7 @@ import { Icon } from 'astro-icon/components';
                   {project.liveUrl && (
                     <a
                       href={project.liveUrl}
-                      class="flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
+                      class="flex items-center gap-2 text-[#7c3aed] hover:text-[#9d5cff] transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -67,7 +67,7 @@ import { Icon } from 'astro-icon/components';
                   {project.githubUrl && (
                     <a
                       href={project.githubUrl}
-                      class="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+                      class="flex items-center gap-2 text-[#9d5cff] hover:text-[#b794ff] transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -80,18 +80,12 @@ import { Icon } from 'astro-icon/components';
             </div>
 
             {/* Hover Border Effect */}
-            <div class="absolute inset-0 border-2 border-transparent group-hover:border-purple-500/30 rounded-2xl pointer-events-none transition-all duration-300" />
+            <div class="absolute inset-0 border-2 border-transparent group-hover:border-[#471396]/40 rounded-2xl pointer-events-none transition-all duration-300" />
           </article>
         ))
       }
     </div>
 
-    <!-- Note about placeholder projects -->
-    <div class="mt-12 text-center">
-      <p class="text-gray-500 text-sm italic">
-        Nota: Estos son proyectos placeholder. Reemplázalos con tus proyectos reales.
-      </p>
-    </div>
   </div>
 </section>
 

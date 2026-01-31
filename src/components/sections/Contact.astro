@@ -64,7 +64,7 @@ import { Icon } from 'astro-icon/components';
               id="name"
               name="name"
               required
-              class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white placeholder-gray-500"
+              class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#471396] text-white placeholder-gray-500"
               placeholder="Tu nombre"
             />
           </div>
@@ -79,7 +79,7 @@ import { Icon } from 'astro-icon/components';
               id="email"
               name="email"
               required
-              class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white placeholder-gray-500"
+              class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#471396] text-white placeholder-gray-500"
               placeholder="tu@email.com"
             />
           </div>
@@ -94,7 +94,7 @@ import { Icon } from 'astro-icon/components';
               name="message"
               required
               rows="5"
-              class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white placeholder-gray-500 resize-none"
+              class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#471396] text-white placeholder-gray-500 resize-none"
               placeholder="Cuéntame sobre tu proyecto..."
             ></textarea>
           </div>
@@ -103,7 +103,7 @@ import { Icon } from 'astro-icon/components';
           <button
             type="submit"
             :disabled="loading"
-            class="w-full px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-500 hover:to-blue-500 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+            class="w-full px-6 py-3 bg-[#471396] text-white font-semibold rounded-lg hover:bg-[#5a1db8] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <span x-show="!loading">Enviar Mensaje</span>
             <span x-show="loading" class="flex items-center justify-center gap-2">
@@ -145,8 +145,8 @@ import { Icon } from 'astro-icon/components';
               href={SOCIAL_LINKS.email}
               class="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group"
             >
-              <div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
-                <Icon name="lucide:mail" class="w-6 h-6 text-purple-400" />
+              <div class="w-12 h-12 bg-[#471396]/20 rounded-lg flex items-center justify-center group-hover:bg-[#471396]/30 transition-colors">
+                <Icon name="lucide:mail" class="w-6 h-6 text-[#7c3aed]" />
               </div>
               <div>
                 <p class="font-semibold">Email</p>
@@ -179,7 +179,7 @@ import { Icon } from 'astro-icon/components';
               href={SOCIAL_LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
-              class="flex items-center gap-3 px-4 py-3 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 hover:border-purple-500/50 transition-all group"
+              class="flex items-center gap-3 px-4 py-3 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 hover:border-[#471396]/50 transition-all group"
               aria-label="GitHub"
             >
               <Icon name="lucide:github" class="w-6 h-6 text-gray-400 group-hover:text-white" />
