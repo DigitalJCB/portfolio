@@ -42,47 +42,17 @@ export const SKILLS = {
   ],
 };
 
-// Projects Data (Placeholders)
+// Projects Data
 export const PROJECTS = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'Plataforma de comercio electrónico moderna con carrito de compras, pagos integrados y panel de administración.',
-    image: '/images/projects/ecommerce.jpg',
-    tags: ['React', 'TypeScript', 'Stripe', 'Tailwind'],
+    title: 'El Clima',
+    description: 'Aplicación del clima con geolocalización automática, temas dinámicos según la hora del día (día, tarde, noche) y animaciones CSS. Integra APIs de Open-Meteo y Nominatim.',
+    image: '/portfolio/images/projects/el-clima.jpg',
+    tags: ['HTML', 'CSS', 'JavaScript', 'APIs'],
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/DigitalJCB/el-clima',
     featured: true,
-  },
-  {
-    id: 2,
-    title: 'Weather Dashboard',
-    description: 'Dashboard interactivo del clima con pronósticos de 7 días, gráficos y geolocalización.',
-    image: '/images/projects/weather.jpg',
-    tags: ['Next.js', 'OpenWeather API', 'Chart.js'],
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false,
-  },
-  {
-    id: 3,
-    title: 'Task Manager App',
-    description: 'Aplicación de gestión de tareas con drag & drop, categorías y sincronización en tiempo real.',
-    image: '/images/projects/tasks.jpg',
-    tags: ['Vue', 'Pinia', 'Firebase'],
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false,
-  },
-  {
-    id: 4,
-    title: 'Portfolio Template',
-    description: 'Plantilla de portafolio responsive con tema oscuro y animaciones suaves.',
-    image: '/images/projects/portfolio.jpg',
-    tags: ['Astro', 'Tailwind', 'Alpine.js'],
-    liveUrl: '#',
-    githubUrl: '#',
-    featured: false,
   },
 ];
 
