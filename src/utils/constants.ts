@@ -50,8 +50,8 @@ export const PROJECTS = [
     description: 'Aplicación del clima con geolocalización automática, temas dinámicos según la hora del día (día, tarde, noche) y animaciones CSS. Integra APIs de Open-Meteo y Nominatim.',
     image: '/portfolio/images/projects/el-clima.jpg',
     tags: ['HTML', 'CSS', 'JavaScript', 'APIs'],
-    liveUrl: '#',
-    githubUrl: 'https://github.com/DigitalJCB/el-clima',
+    liveUrl: 'https://digitaljcb.github.io/Clima/',
+    githubUrl: 'https://github.com/DigitalJCB/Clima',
     featured: true,
   },
 ];
