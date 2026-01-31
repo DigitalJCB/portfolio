@@ -32,10 +32,7 @@ body {
 
 /* Utility Classes */
 .gradient-text {
-  background: linear-gradient(135deg, var(--color-accent-purple) 0%, var(--color-accent-blue) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #471396;
 }
 
 .glass-card {
