@@ -26,14 +26,22 @@ import { Icon } from 'astro-icon/components';
             }`}
           >
             {/* Project Image Background */}
-            <div class="absolute inset-0 bg-gradient-to-br from-[#471396]/30 to-[#7c3aed]/20 group-hover:from-[#471396]/40 group-hover:to-[#7c3aed]/30 transition-all duration-300">
-              {/* Placeholder gradient - replace with actual images */}
-              <div class="w-full h-full flex items-center justify-center">
-                <Icon
-                  name="lucide:layout-dashboard"
-                  class="w-24 h-24 text-white/10 group-hover:text-white/20 transition-all"
+            <div class="absolute inset-0">
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
-              </div>
+              ) : (
+                <div class="w-full h-full bg-gradient-to-br from-[#471396]/30 to-[#7c3aed]/20 flex items-center justify-center">
+                  <Icon
+                    name="lucide:layout-dashboard"
+                    class="w-24 h-24 text-white/10 group-hover:text-white/20 transition-all"
+                  />
+                </div>
+              )}
             </div>
 
             {/* Content Overlay */}
