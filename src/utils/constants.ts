@@ -28,13 +28,13 @@ export const SKILLS = {
   frontend: [
     { name: 'HTML', icon: 'logos:html-5', level: 'Intermedio' },
     { name: 'CSS', icon: 'logos:css-3', level: 'Intermedio' },
-    { name: 'Astro', icon: 'logos:astro-icon', level: 'Básico' },
+    { name: 'Astro', icon: 'simple-icons:astro', level: 'Básico' },
   ],
   backend: [
     { name: 'MySQL', icon: 'logos:mysql-icon', level: 'Intermedio' },
   ],
   tools: [
-    { name: 'GitHub', icon: 'logos:github-icon', level: 'Intermedio' },
+    { name: 'GitHub', icon: 'simple-icons:github', level: 'Intermedio' },
   ],
   aiCollaborators: [
     { name: 'GitHub Copilot', icon: 'simple-icons:githubcopilot', level: 'Colaborador IA' },
