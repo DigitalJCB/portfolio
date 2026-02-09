@@ -2,7 +2,7 @@
 export const SITE_INFO = {
   name: 'José Carlos Benítez',
   role: 'Frontend Developer',
-  email: 'josseerme@proton.me',
+  email: 'joseerme@proton.me',
   tagline: 'Creando experiencias web modernas y accesibles',
   bio: 'Desarrollador frontend apasionado por crear interfaces intuitivas y experiencias de usuario excepcionales.',
   location: 'Paraguarí, Paraguay',
@@ -12,7 +12,7 @@ export const SITE_INFO = {
 // Social Links
 export const SOCIAL_LINKS = {
   github: 'https://github.com/DigitalJCB',
-  email: 'mailto:josseerme@proton.me',
+  email: 'mailto:joseerme@proton.me',
 };
 
 // Navigation Links
