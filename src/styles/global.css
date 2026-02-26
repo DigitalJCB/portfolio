@@ -7,9 +7,9 @@
   --color-primary-surface: #1b1b1d;
   --color-primary-border: #2a2a2d;
 
-  --color-accent-purple: #471396;
-  --color-accent-purple-light: #6b21a8;
-  --color-accent-blue: #7c3aed;
+  --color-accent-purple: #ca7930;
+  --color-accent-purple-light: #ca7930;
+  --color-accent-blue: #ca7930;
 
   --color-text-primary: #ffffff;
   --color-text-secondary: #a1a1aa;
@@ -26,13 +26,13 @@ body {
   color: var(--color-text-primary);
   font-family: var(--font-sans);
   background-image:
-    radial-gradient(at 0% 0%, rgba(71, 19, 150, 0.15) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(124, 58, 237, 0.1) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, rgba(202, 121, 48, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(202, 121, 48, 0.1) 0px, transparent 50%);
 }
 
 /* Utility Classes */
 .gradient-text {
-  color: #471396;
+  color: #ca7930;
 }
 
 .glass-card {

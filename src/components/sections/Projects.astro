@@ -35,7 +35,7 @@ import { Icon } from 'astro-icon/components';
                   loading="lazy"
                 />
               ) : (
-                <div class="w-full h-full bg-gradient-to-br from-[#471396]/30 to-[#7c3aed]/20 flex items-center justify-center">
+                <div class="w-full h-full bg-gradient-to-br from-[#ca7930]/30 to-[#ca7930]/20 flex items-center justify-center">
                   <Icon
                     name="lucide:layout-dashboard"
                     class="w-24 h-24 text-white/10 group-hover:text-white/20 transition-all"
@@ -64,7 +64,7 @@ import { Icon } from 'astro-icon/components';
                   {project.liveUrl && (
                     <a
                       href={project.liveUrl}
-                      class="flex items-center gap-2 text-[#7c3aed] hover:text-[#9d5cff] transition-colors"
+                      class="flex items-center gap-2 text-[#ca7930] hover:text-[#d4894a] transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -75,7 +75,7 @@ import { Icon } from 'astro-icon/components';
                   {project.githubUrl && (
                     <a
                       href={project.githubUrl}
-                      class="flex items-center gap-2 text-[#9d5cff] hover:text-[#b794ff] transition-colors"
+                      class="flex items-center gap-2 text-[#d4894a] hover:text-[#e0a872] transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -88,7 +88,7 @@ import { Icon } from 'astro-icon/components';
             </div>
 
             {/* Hover Border Effect */}
-            <div class="absolute inset-0 border-2 border-transparent group-hover:border-[#471396]/40 rounded-2xl pointer-events-none transition-all duration-300" />
+            <div class="absolute inset-0 border-2 border-transparent group-hover:border-[#ca7930]/40 rounded-2xl pointer-events-none transition-all duration-300" />
           </article>
         ))
       }

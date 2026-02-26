@@ -54,6 +54,16 @@ export const PROJECTS = [
     githubUrl: 'https://github.com/DigitalJCB/Clima',
     featured: true,
   },
+  {
+    id: 2,
+    title: 'Finanzas Personales',
+    description: 'Aplicación web para gestión de finanzas personales con dashboard de resumen, registro de transacciones, presupuestos por categoría y reportes visuales. Tema claro/oscuro incluido.',
+    image: '/portfolio/images/projects/finanzas-personales.png',
+    tags: ['HTML', 'CSS', 'JavaScript', 'LocalStorage'],
+    liveUrl: 'https://digitaljcb.github.io/finanzas/',
+    githubUrl: 'https://github.com/DigitalJCB/finanzas',
+    featured: false,
+  },
 ];
 
 // FAQ Data (opcional)
